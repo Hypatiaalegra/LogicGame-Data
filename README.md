@@ -1,5 +1,5 @@
 # LogicGame-Data
-Dev and Test Data of LogicGame benchmark. Paper Arxiv: https://arxiv.org/abs/2408.15778
+Dev and Whole Data of LogicGame benchmark. [Paper Arxiv](https://arxiv.org/abs/2408.15778)
 
 ## Introduction
 We introduce benchmark ___LogicGame___, designed to evaluate the logic rule understanding, execution, and planning capabilities of Large Language Models (LLMs). ___LogicGame___ features diverse games with predefined regulations, specifically created to assess logical reasoning independent of mere knowledge. The benchmark tests models across various difficulty levels, aiming for a comprehensive evaluation of performance on rule-based reasoning and multi-step execution and planning.
