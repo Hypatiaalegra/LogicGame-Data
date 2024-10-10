@@ -21,14 +21,14 @@ This project is a benchmark data release that includes four `.jsonl` files: `en_
 - **category**: The category/task of the data.
 
 ## Leaderboard
-The metric in both Table is AP-Acc%, whose definition can be found in the Paper. The highest performance is marked in **bold**.
+The definition of metrics in both Tables can be found in the Paper. The best performance is marked in **bold**.
 ### Performance of 14 models on LogicGame of **zh** version
 | Model              | AP-Acc% | A-Acc% | P-Acc% | IFError% | JSError% |
 |--------------------|---------|--------|--------|----------|----------|
-| o1-preview         | 54.93   | 67.11  | 66.85  | 0.00     | 0.00     |
-| o1-mini            | 51.97   | 63.49  | 64.97  | 0.00     | 0.00     |
-| claude-3-5-sonnet  | 30.26   | 39.47  | 43.20  | 0.00     | 0.00     |
-| gpt-4o             | 26.97   | 35.86  | 39.25  | 0.33     | 0.00     |
+| o1-preview         | **54.93**   | **67.11**  | **66.85**  | **0.00**     | **0.00**     |
+| o1-mini            | 51.97   | 63.49  | 64.97  | **0.00**     | **0.00**     |
+| claude-3-5-sonnet  | 30.26   | 39.47  | 43.20  | **0.00**     | **0.00**     |
+| gpt-4o             | 26.97   | 35.86  | 39.25  | 0.33     | **0.00**     |
 | gpt-4-turbo-0409   | 25.66   | 32.24  | 38.18  | 0.99     | 0.66     |
 | glm-4-plus         | 21.71   | 28.29  | 32.76  | 9.21     | 0.33     |
 | qwen2-72b          | 20.39   | 27.96  | 32.61  | 2.63     | 0.99     |
@@ -36,7 +36,7 @@ The metric in both Table is AP-Acc%, whose definition can be found in the Paper.
 | claude-3-haiku     | 9.54    | 14.80  | 16.82  | 2.63     | 0.33     |
 | glm-4-9b           | 7.57    | 12.83  | 11.27  | 20.39    | 0.99     |
 | internlm2-5-7b     | 4.61    | 7.24   | 9.81   | 11.18    | 3.29     |
-| llama-3-8b         | 3.62    | 5.26   | 9.31   | 35.53    | 0.00     |
+| llama-3-8b         | 3.62    | 5.26   | 9.31   | 35.53    | **0.00**    |
 | qwen2-7b           | 2.63    | 4.61   | 7.32   | 3.29     | 2.96     |
 | mistral-7b         | 2.96    | 3.95   | 6.63   | 26.32    | 6.25     |
 
@@ -62,16 +62,16 @@ The metric in both Table is AP-Acc%, whose definition can be found in the Paper.
 ### Performance of 14 models on LogicGame of **en** version
 | Model              | AP-Acc% | A-Acc% | P-Acc% | IFError% | JSError% |
 |--------------------|---------|--------|--------|----------|----------|
-| o1-preview         | 53.29   | 65.46  | 64.82  | 0.33     | 0.00     |
+| o1-preview         | **53.29**   | **65.46**  | **64.82**  | 0.33     | **0.00**     |
 | o1-mini            | 49.67   | 61.18  | 63.25  | 0.66     | 0.33     |
-| claude-3-5-sonnet  | 29.28   | 37.17  | 43.48  | 0.33     | 0.00     |
+| claude-3-5-sonnet  | 29.28   | 37.17  | 43.48  | 0.33     | **0.00**    |
 | gpt-4o             | 28.29   | 41.12  | 42.43  | 0.66     | 0.66     |
 | gpt-4-turbo-0409   | 21.05   | 28.95  | 33.83  | 0.66     | 0.99     |
 | glm-4-plus         | 17.76   | 24.34  | 28.36  | 6.91     | 0.66     |
 | qwen2-72b          | 8.88    | 13.82  | 18.56  | 24.67    | 0.66     |
 | glm-4-9b           | 7.89    | 9.87   | 13.05  | 17.11    | 1.64     |
 | internlm2-5-7b     | 6.25    | 7.89   | 13.06  | 13.16    | 1.32     |
-| claude-3-haiku     | 4.93    | 8.55   | 12.60  | 0.00     | 1.64     |
+| claude-3-haiku     | 4.93    | 8.55   | 12.60  | **0.00**     | 1.64     |
 | llama-3-70b        | 4.61    | 8.55   | 11.44  | 55.59    | 0.33     |
 | mistral-7b         | 4.28    | 5.26   | 6.95   | 17.43    | 8.88     |
 | qwen2-7b           | 1.64    | 3.95   | 5.56   | 1.64     | 8.22     |
