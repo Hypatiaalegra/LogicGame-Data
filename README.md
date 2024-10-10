@@ -2,10 +2,13 @@
 Dev and Test Data of LogicGame benchmark. Paper Arxiv: https://arxiv.org/abs/2408.15778
 
 ## Introduction
-We introduce benchmark ___LogicGame___, designed to evaluate the logic rule understanding, execution, and planning capabilities of Large Language Models (LLMs). ___LogicGame___ features diverse games with predefined regulations, specifically created to assess logical reasoning independent of mere knowledge. The benchmark tests models across various difficulty levels, aiming for a comprehensive evaluation of performance on rule-based reasoning and multi-step execution&planning.
+We introduce benchmark ___LogicGame___, designed to evaluate the logic rule understanding, execution, and planning capabilities of Large Language Models (LLMs). ___LogicGame___ features diverse games with predefined regulations, specifically created to assess logical reasoning independent of mere knowledge. The benchmark tests models across various difficulty levels, aiming for a comprehensive evaluation of performance on rule-based reasoning and multi-step execution and planning.
 
 ## Data Description
-This project is a benchmark data release that includes four `.jsonl` files: `en_dev`, `zh_dev`, `en_test`, and `zh_test`. These represent the English and Chinese versions of the dev and test sets, respectively. Each language version corresponds one-to-one with its counterpart. The dev sets contain 60 entries each, while the test sets comprise 244 entries each. 
+This project is a benchmark data release that includes four `.jsonl` files: `en_dev`, `zh_dev`, `en_all`, and `zh_all`. These files represent the English and Chinese versions of the development (dev) and complete sets (whole sets), respectively. Each language version corresponds directly with its counterpart. The dev sets contain 10 entries each, whereas the whole sets contain 304 entries each.
+
+The `zh_all` and `en_all` files are used as input data for [Our Codabench Submission](https://www.codabench.org/competitions/4140/) where you can utilize the **contexts** provided in these files as prompts to obtain model responses for evaluation. The dev set is primarily for detailed demonstration purposes.
+
 ### Dev Dataset Fields:
 - **qid**: A unique identifier for the data entry.
 - **contexts**: The benchmark question, which is a combination of rules, question, and output constraints.
@@ -14,7 +17,7 @@ This project is a benchmark data release that includes four `.jsonl` files: `en_
 - **examples**: Few-shot examples.
 - **category**: The type/category of the data.
 
-### Test Dataset Fields:
+### Whole(_all) Dataset Fields: 
 - **qid**: A unique identifier for the data entry.
 - **contexts**: The benchmark question.
 - **level**: The difficulty level of the question.
@@ -37,8 +40,9 @@ The definition of metrics in both Tables can be found in the Paper. The best per
 | glm-4-9b           | 7.57    | 12.83  | 11.27  | 20.39    | 0.99     |
 | internlm2-5-7b     | 4.61    | 7.24   | 9.81   | 11.18    | 3.29     |
 | llama-3-8b         | 3.62    | 5.26   | 9.31   | 35.53    | **0.00**    |
-| qwen2-7b           | 2.63    | 4.61   | 7.32   | 3.29     | 2.96     |
 | mistral-7b         | 2.96    | 3.95   | 6.63   | 26.32    | 6.25     |
+| qwen2-7b           | 2.63    | 4.61   | 7.32   | 3.29     | 2.96     |
+
 
 
 <!-- | **Model**    | **Execution**    |    |    |    | **Avg.**    | **Planning**    |    |    |    | **Avg.**    | **Overall**    |
